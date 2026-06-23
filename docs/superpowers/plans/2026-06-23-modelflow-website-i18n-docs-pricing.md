@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - 8 种语言：`en / zh-CN / zh-TW / ja / ko / de / fr / es`。
-- 定价：月付 `$9.9/month`，年付 `$99/year`（Save 17%）。
+- 定价：月付 `$9.99/month`，年付 `$99.99/year`（Save 17%）。
 - 截图来源：`C:\Users\majin\multi-agent-platform\store-assets\screenshots\{lang}\` 与 `C:\Users\majin\multi-agent-platform\copyright-registration\screenshots\`。
 - 无新增外部依赖，继续使用 Google Fonts（Inter）。
 - 所有新文件路径使用正斜杠；本地复制操作使用 OS 路径。
@@ -137,8 +137,8 @@ const translations = {
       freeBtn: 'Download Free',
       proName: 'Pro',
       proDesc: 'For power users and teams.',
-      proMonthlyPrice: '$9.9<span>/month</span>',
-      proYearlyPrice: '$99<span>/year</span>',
+      proMonthlyPrice: '$9.99<span>/month</span>',
+      proYearlyPrice: '$99.99<span>/year</span>',
       proYearlyBilling: 'billed annually · save 17%',
       proMonthlyBilling: 'billed monthly',
       proFeature1: 'Unlimited model configurations',
@@ -650,7 +650,7 @@ git commit -m "feat(styles): add language selector and pricing toggle styles"
     <button type="button" class="pricing-toggle-btn" data-billing="yearly" data-i18n="pricing.yearly">Yearly</button>
   </div>
 
-  <div class="pricing-price" id="pro-price" data-i18n="pricing.proMonthlyPrice" data-i18n-html>$9.9<span>/month</span></div>
+  <div class="pricing-price" id="pro-price" data-i18n="pricing.proMonthlyPrice" data-i18n-html>$9.99<span>/month</span></div>
   <p class="pricing-billing" id="pro-billing" data-i18n="pricing.proMonthlyBilling">billed monthly</p>
 
   <ul class="pricing-features">
@@ -716,8 +716,8 @@ function initPricingToggle() {
 Run: `python -m http.server 8000`  
 Open: http://localhost:8000#pricing  
 Expected:
-- 默认显示 Monthly：`$9.9/month`、`billed monthly`。
-- 点击 Yearly 后显示：`$99/year`、`billed annually · save 17%`、“Save 17%” 角标出现。
+- 默认显示 Monthly：`$9.99/month`、`billed monthly`。
+- 点击 Yearly 后显示：`$99.99/year`、`billed annually · save 17%`、“Save 17%” 角标出现。
 - 按钮文案同步变化。
 - 切换语言后，再切换 Monthly/Yearly，文案仍正确。
 

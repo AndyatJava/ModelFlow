@@ -10,7 +10,7 @@
 
 当前 ModelFlow 官网（`index.html`）存在以下问题：
 
-1. **定价展示不清晰**：`$99/year` 仅以副标题形式出现在 Pro 卡片中，没有作为独立的年付订阅选项展示。
+1. **定价展示不清晰**：`$99.99/year` 仅以副标题形式出现在 Pro 卡片中，没有作为独立的年付订阅选项展示。
 2. **文档为空**：顶部导航的 Docs 链接指向 GitHub Wiki，站点本地没有操作手册内容。
 3. **无国际化**：页面仅支持英文，而 ModelFlow 应用本身支持 8 种语言。
 
@@ -158,8 +158,8 @@ const translations = {
 
 #### 2.2 价格展示
 
-- Monthly：显示 `$9.9<span>/month</span>`，副标题为空或显示 “billed monthly”。
-- Yearly：显示 `$99<span>/year</span>`，副标题显示 “billed annually · save 17%”。
+- Monthly：显示 `$9.99<span>/month</span>`，副标题为空或显示 “billed monthly”。
+- Yearly：显示 `$99.99<span>/year</span>`，副标题显示 “billed annually · save 17%”。
 
 #### 2.3 视觉反馈
 
@@ -168,7 +168,7 @@ const translations = {
 
 #### 2.4 降级方案
 
-- 如果 JS 被禁用，页面显示默认静态内容：`$9.9/month · or $99/year · 7-day free trial`。
+- 如果 JS 被禁用，页面显示默认静态内容：`$9.99/month · or $99.99/year · 7-day free trial`。
 
 ### 3. 操作手册
 
