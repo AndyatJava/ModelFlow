@@ -106,48 +106,6 @@ function initLanguageSelector() {
   updateCurrentLabel();
 }
 
-function initPricingToggle() {
-  const card = document.querySelector('[data-pricing-card="pro"]');
-  if (!card) return;
-
-  const buttons = card.querySelectorAll('[data-billing]');
-  const priceEl = document.getElementById('pro-price');
-  const billingEl = document.getElementById('pro-billing');
-  const btnEl = document.getElementById('pro-btn');
-  const saveEl = document.getElementById('pricing-save');
-
-  if (!priceEl || !billingEl || !btnEl) return;
-
-  function applyBilling(billing) {
-    buttons.forEach((btn) => {
-      btn.classList.toggle('active', btn.getAttribute('data-billing') === billing);
-    });
-
-    if (billing === 'yearly') {
-      priceEl.setAttribute('data-i18n', 'pricing.proYearlyPrice');
-      billingEl.setAttribute('data-i18n', 'pricing.proYearlyBilling');
-      btnEl.setAttribute('data-i18n', 'pricing.proYearlyBtn');
-      if (saveEl) saveEl.style.display = 'inline-block';
-    } else {
-      priceEl.setAttribute('data-i18n', 'pricing.proMonthlyPrice');
-      billingEl.setAttribute('data-i18n', 'pricing.proMonthlyBilling');
-      btnEl.setAttribute('data-i18n', 'pricing.proMonthlyBtn');
-      if (saveEl) saveEl.style.display = 'none';
-    }
-
-    if (window.I18n) {
-      window.I18n.render();
-    }
-  }
-
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const billing = btn.getAttribute('data-billing');
-      applyBilling(billing);
-    });
-  });
-}
-
 function updateDocsLink() {
   const links = document.querySelectorAll('[data-docs-link]');
   if (!window.I18n || links.length === 0) return;
@@ -161,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initScrollSpy();
   initLanguageSelector();
-  initPricingToggle();
   updateDocsLink();
 });
 

@@ -266,32 +266,6 @@ a {
   outline: none;
 }
 
-.pricing-toggle {
-  display: inline-flex;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 4px;
-  margin-bottom: 20px;
-}
-
-.pricing-toggle-btn {
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: none;
-  background: transparent;
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.pricing-toggle-btn.active {
-  background: var(--cta);
-  color: #0B0C0F;
-}
-
 .pricing-save {
   display: inline-block;
   margin-left: 8px;
@@ -811,9 +785,9 @@ a {
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  max-width: 880px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -830,6 +804,13 @@ a {
 .pricing-card-popular {
   border-color: rgba(245, 166, 35, 0.5);
   box-shadow: 0 0 40px rgba(245, 166, 35, 0.08);
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
 }
 
 .pricing-badge {
@@ -897,12 +878,6 @@ a {
 
 .pricing-btn {
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .cta {
