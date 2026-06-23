@@ -168,7 +168,7 @@ const translations = {
 
 #### 2.4 降级方案
 
-- 如果 JS 被禁用，页面显示默认静态内容：`$9.9/month · or $99/year · 14-day free trial`。
+- 如果 JS 被禁用，页面显示默认静态内容：`$9.9/month · or $99/year · 7-day free trial`。
 
 ### 3. 操作手册
 

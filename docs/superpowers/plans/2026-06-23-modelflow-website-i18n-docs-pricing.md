@@ -86,7 +86,7 @@ const translations = {
       subtitle: 'Bring all your AI models together. Chat with text, image, video, and audio models; run local CLI commands; build automations; and extend everything via plugins — all from one local-first desktop app.',
       ctaPrimary: 'Get ModelFlow Free',
       ctaSecondary: 'See Features',
-      trust: 'Free download · 14-day Pro trial · Local-first',
+      trust: 'Free download · 7-day Pro trial · Local-first',
     },
     features: {
       title: 'Built for model orchestration',
@@ -146,13 +146,13 @@ const translations = {
       proFeature3: 'Verified plugins & tool calling',
       proFeature4: 'Call log export & advanced analytics',
       proFeature5: 'Priority support',
-      proMonthlyBtn: 'Start 14-Day Free Trial',
-      proYearlyBtn: 'Start 14-Day Free Trial — Save 17%',
+      proMonthlyBtn: 'Start 7-Day Free Trial',
+      proYearlyBtn: 'Start 7-Day Free Trial — Save 17%',
       popularBadge: 'Most Popular',
     },
     cta: {
       title: 'Ready to orchestrate your AI team?',
-      subtitle: 'Download ModelFlow from the Microsoft Store and start your 14-day Pro trial today.',
+      subtitle: 'Download ModelFlow from the Microsoft Store and start your 7-day Pro trial today.',
       btn: 'Get it on Microsoft Store',
     },
     footer: {
@@ -661,7 +661,7 @@ git commit -m "feat(styles): add language selector and pricing toggle styles"
     <li data-i18n="pricing.proFeature5">Priority support</li>
   </ul>
 
-  <a class="btn btn-cta pricing-btn" id="pro-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="pricing.proMonthlyBtn">Start 14-Day Free Trial</a>
+  <a class="btn btn-cta pricing-btn" id="pro-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="pricing.proMonthlyBtn">Start 7-Day Free Trial</a>
 </article>
 ```
 
