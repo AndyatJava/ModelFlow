@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow 用戶指南 — 繁體中文</title>
+  <meta name="description" content="學習如何使用 ModelFlow：模型管理、對話、工作流程、外掛程式、CLI 工具、通話記錄與設定。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="ModelFlow logo" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">快速入門</a></li>
+        <li><a href="#models">模型管理</a></li>
+        <li><a href="#chat">對話與 @ 提及</a></li>
+        <li><a href="#workflows">工作流程</a></li>
+        <li><a href="#plugins">外掛程式</a></li>
+        <li><a href="#cli-tools">本機 CLI 與工具</a></li>
+        <li><a href="#call-log">通話記錄與費用</a></li>
+        <li><a href="#settings">設定與隱私</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>ModelFlow 用戶指南</h1>
+        <p>歡迎使用 ModelFlow。本指南涵蓋從初次啟動到進階多模型工作流程的所有內容。</p>
+        <h2>快速入門</h2>
+        <ol>
+          <li>從 Microsoft Store 下載 ModelFlow。</li>
+          <li>開啟應用程式並完成新手引導。</li>
+          <li>在模型管理員中新增您的第一個模型。</li>
+          <li>開始對話並輸入 <code>@model-name</code> 來切換模型。</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>模型管理</h2>
+        <p>使用模型管理員來新增文字、圖片、影片和音訊模型。您可以為每個模型設定提供者、API 金鑰、角色、上下文視窗和費用上限。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-TW/02-models.png" alt="模型管理員" />
+          <figcaption>已設定多個提供者的模型管理員。</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>對話與 @ 提及</h2>
+        <p>輸入 <code>@</code> 後接模型名稱，即可將下一則回覆導向該模型。您可以在同一個對話中串接多個模型。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-TW/01-chat.png" alt="使用 @ 提及的對話" />
+          <figcaption>使用 @ 提及在對話中切換模型。</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>工作流程</h2>
+        <p>開啟工作流程編輯器來建立視覺化流程。將模型節點、條件節點和指令節點拖曳至畫布，然後連接它們。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-TW/03-workflow.png" alt="工作流程編輯器" />
+          <figcaption>具有連接節點的視覺化工作流程編輯器。</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>外掛程式</h2>
+        <p>ModelFlow 支援已驗證的外掛程式和社群外掛程式。從外掛程式管理員安裝外掛程式，或自行開發。</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="外掛程式管理員" />
+          <figcaption>瀏覽與管理外掛程式。</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>本機 CLI 與工具</h2>
+        <p>模型可以執行本機指令、讀取檔案和列出目錄。在對話中輸入 <code>/tool</code> 或在工作流程中加入指令節點。</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="記憶體與工具" />
+          <figcaption>具有安全策略的工具執行。</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>通話記錄與費用</h2>
+        <p>通話記錄會追蹤每一次 AI 通話、工具執行、Token 使用量和預估費用。匯出記錄以供分析。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-TW/04-calllog.png" alt="通話記錄" />
+          <figcaption>追蹤每一次通話與費用。</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>設定與隱私</h2>
+        <p>ModelFlow 採用本機優先架構。您的對話、模型設定和外掛程式都儲存在您的電腦上。在設定中變更語言、工作區和匯出資料。</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="工作區設定" />
+          <figcaption>工作區與設定面板。</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← 返回 ModelFlow 首頁</a></p>
+      <p>© 2026 ModelFlow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

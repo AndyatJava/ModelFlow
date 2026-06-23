@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow Documentation</title>
+  <meta name="description" content="ModelFlow user guide and documentation." />
+  <script>
+    (function () {
+      var supported = ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'de', 'fr', 'es'];
+      var stored;
+      try { stored = localStorage.getItem('modelflow-lang'); } catch (e) {}
+      var lang = stored || (navigator.language || 'en');
+      var match = supported.find(function (l) { return l.toLowerCase() === lang.toLowerCase(); });
+      if (!match) match = supported.find(function (l) { return lang.toLowerCase().indexOf(l.toLowerCase() + '-') === 0; });
+      if (!match) match = 'en';
+      window.location.replace('./' + match + '/index.html');
+    })();
+  </script>
+</head>
+<body style="background:#0B0C0F;color:#F5F7FA;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <main style="display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;">
+    <div style="padding:24px;">
+      <h1 style="font-size:2rem;margin-bottom:16px;">ModelFlow Documentation</h1>
+      <p style="color:#9CA3AF;margin-bottom:24px;">Choose your language:</p>
+      <ul style="list-style:none;padding:0;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <li><a href="./en/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">English</a></li>
+        <li><a href="./zh-CN/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">简体中文</a></li>
+        <li><a href="./zh-TW/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">繁體中文</a></li>
+        <li><a href="./ja/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">日本語</a></li>
+        <li><a href="./ko/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">한국어</a></li>
+        <li><a href="./de/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">Deutsch</a></li>
+        <li><a href="./fr/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">Français</a></li>
+        <li><a href="./es/index.html" style="color:#2E7FF7;text-decoration:none;font-weight:500;">Español</a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

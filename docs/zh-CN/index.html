@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow 用户指南 — 简体中文</title>
+  <meta name="description" content="了解如何使用 ModelFlow：模型管理、聊天、工作流、插件、CLI 工具、调用记录和设置。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="ModelFlow 标志" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">快速入门</a></li>
+        <li><a href="#models">模型管理</a></li>
+        <li><a href="#chat">聊天与 @ 提及</a></li>
+        <li><a href="#workflows">工作流</a></li>
+        <li><a href="#plugins">插件</a></li>
+        <li><a href="#cli-tools">本地 CLI 与工具</a></li>
+        <li><a href="#call-log">调用记录与费用</a></li>
+        <li><a href="#settings">设置与隐私</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>ModelFlow 用户指南</h1>
+        <p>欢迎使用 ModelFlow。本指南涵盖从首次启动到高级多模型工作流的所有内容。</p>
+        <h2>快速入门</h2>
+        <ol>
+          <li>从 Microsoft Store 下载 ModelFlow。</li>
+          <li>打开应用并完成引导设置。</li>
+          <li>在模型管理器中添加您的第一个模型。</li>
+          <li>开始聊天，输入 <code>@model-name</code> 即可切换模型。</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>模型管理</h2>
+        <p>使用模型管理器添加文本、图像、视频和音频模型。对于每个模型，您可以设置提供商、API 密钥、角色、上下文窗口和费用限制。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-CN/02-models.png" alt="模型管理器" />
+          <figcaption>模型管理器，已配置多个提供商。</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>聊天与 @ 提及</h2>
+        <p>输入 <code>@</code> 后跟模型名称，即可将下一条回复路由到该模型。您可以在同一会话中串联多个模型。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-CN/01-chat.png" alt="带 @ 提及的聊天" />
+          <figcaption>使用 @ 提及在对话中切换模型。</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>工作流</h2>
+        <p>打开工作流编辑器以构建可视化管道。将模型节点、条件节点和命令节点拖放到画布上，然后连接它们。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-CN/03-workflow.png" alt="工作流编辑器" />
+          <figcaption>可视化工作流编辑器，节点已连接。</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>插件</h2>
+        <p>ModelFlow 支持已验证的插件和社区插件。从插件管理器安装插件，或构建您自己的插件。</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="插件管理器" />
+          <figcaption>浏览和管理插件。</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>本地 CLI 与工具</h2>
+        <p>模型可以运行本地命令、读取文件和列出目录。在聊天中输入 <code>/tool</code> 或在工作流中添加命令节点。</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="记忆与工具" />
+          <figcaption>工具执行与安全策略。</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>调用记录与费用</h2>
+        <p>调用记录跟踪每一次 AI 调用、工具执行、令牌使用量和估算费用。导出日志以供分析。</p>
+        <figure>
+          <img src="../assets/screenshots/zh-CN/04-calllog.png" alt="调用记录" />
+          <figcaption>跟踪每一次调用和费用。</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>设置与隐私</h2>
+        <p>ModelFlow 采用本地优先架构。您的会话、模型配置和插件都存储在您的设备上。在设置中更改语言、工作区并导出数据。</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="工作区设置" />
+          <figcaption>工作区和设置面板。</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← 返回 ModelFlow 首页</a></p>
+      <p>© 2026 ModelFlow. 保留所有权利。</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow User Guide — English</title>
+  <meta name="description" content="Learn how to use ModelFlow: models, chat, workflows, plugins, CLI tools, call log, and settings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="ModelFlow logo" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">Quick Start</a></li>
+        <li><a href="#models">Model Management</a></li>
+        <li><a href="#chat">Chat &amp; @ Mentions</a></li>
+        <li><a href="#workflows">Workflows</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#cli-tools">Local CLI &amp; Tools</a></li>
+        <li><a href="#call-log">Call Log &amp; Cost</a></li>
+        <li><a href="#settings">Settings &amp; Privacy</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>ModelFlow User Guide</h1>
+        <p>Welcome to ModelFlow. This guide covers everything from your first launch to advanced multi-model workflows.</p>
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Download ModelFlow from the Microsoft Store.</li>
+          <li>Open the app and complete the onboarding.</li>
+          <li>Add your first model in the Model Manager.</li>
+          <li>Start a chat and type <code>@model-name</code> to switch models.</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>Model Management</h2>
+        <p>Use the Model Manager to add text, image, video, and audio models. For each model you can set the provider, API key, role, context window, and cost limits.</p>
+        <figure>
+          <img src="../assets/screenshots/en/02-models.png" alt="Model Manager" />
+          <figcaption>Model Manager with multiple providers configured.</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>Chat &amp; @ Mentions</h2>
+        <p>Type <code>@</code> followed by a model name to route the next reply to that model. You can chain multiple models in the same conversation.</p>
+        <figure>
+          <img src="../assets/screenshots/en/01-chat.png" alt="Chat with @ mention" />
+          <figcaption>Use @mentions to switch models mid-conversation.</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>Workflows</h2>
+        <p>Open the Workflow Editor to build visual pipelines. Drag model nodes, condition nodes, and command nodes onto the canvas, then connect them.</p>
+        <figure>
+          <img src="../assets/screenshots/en/03-workflow.png" alt="Workflow Editor" />
+          <figcaption>Visual workflow editor with connected nodes.</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>Plugins</h2>
+        <p>ModelFlow supports verified plugins and community plugins. Install plugins from the Plugin Manager or build your own.</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="Plugin Manager" />
+          <figcaption>Browse and manage plugins.</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>Local CLI &amp; Tools</h2>
+        <p>Models can run local commands, read files, and list directories. Type <code>/tool</code> in chat or add a Command Node to a workflow.</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="Memory and tools" />
+          <figcaption>Tool execution with security policies.</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>Call Log &amp; Cost</h2>
+        <p>The Call Log tracks every AI call, tool execution, token usage, and estimated cost. Export logs for analysis.</p>
+        <figure>
+          <img src="../assets/screenshots/en/04-calllog.png" alt="Call Log" />
+          <figcaption>Track every call and cost.</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>Settings &amp; Privacy</h2>
+        <p>ModelFlow is local-first. Your sessions, model configs, and plugins are stored on your machine. Change language, workspace, and export data in Settings.</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="Workspace settings" />
+          <figcaption>Workspace and settings panel.</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← Back to ModelFlow home</a></p>
+      <p>© 2026 ModelFlow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow ユーザーガイド — 日本語</title>
+  <meta name="description" content="ModelFlowの使い方を学びましょう：モデル、チャット、ワークフロー、プラグイン、CLIツール、コールログ、設定など。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="ModelFlow ロゴ" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">クイックスタート</a></li>
+        <li><a href="#models">モデル管理</a></li>
+        <li><a href="#chat">チャットと@メンション</a></li>
+        <li><a href="#workflows">ワークフロー</a></li>
+        <li><a href="#plugins">プラグイン</a></li>
+        <li><a href="#cli-tools">ローカルCLIとツール</a></li>
+        <li><a href="#call-log">コールログとコスト</a></li>
+        <li><a href="#settings">設定とプライバシー</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>ModelFlow ユーザーガイド</h1>
+        <p>ModelFlowへようこそ。このガイドでは、初回起動から高度なマルチモデルワークフローまで、すべてを網羅しています。</p>
+        <h2>クイックスタート</h2>
+        <ol>
+          <li>Microsoft StoreからModelFlowをダウンロードします。</li>
+          <li>アプリを開き、オンボーディングを完了します。</li>
+          <li>モデルマネージャーで最初のモデルを追加します。</li>
+          <li>チャットを開始し、<code>@model-name</code>と入力してモデルを切り替えます。</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>モデル管理</h2>
+        <p>モデルマネージャーを使用して、テキスト、画像、動画、音声の各モデルを追加できます。各モデルについて、プロバイダー、APIキー、ロール、コンテキストウィンドウ、コスト上限を設定できます。</p>
+        <figure>
+          <img src="../assets/screenshots/ja/02-models.png" alt="モデルマネージャー" />
+          <figcaption>複数のプロバイダーが設定されたモデルマネージャー。</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>チャットと@メンション</h2>
+        <p><code>@</code>の後にモデル名を入力すると、次の返信をそのモデルにルーティングできます。同じ会話内で複数のモデルを連携させることができます。</p>
+        <figure>
+          <img src="../assets/screenshots/ja/01-chat.png" alt="@メンション付きチャット" />
+          <figcaption>会話の途中で@メンションを使ってモデルを切り替えます。</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>ワークフロー</h2>
+        <p>ワークフローエディターを開いて、ビジュアルパイプラインを構築します。モデルノード、条件ノード、コマンドノードをキャンバスにドラッグして接続します。</p>
+        <figure>
+          <img src="../assets/screenshots/ja/03-workflow.png" alt="ワークフローエディター" />
+          <figcaption>接続されたノードを持つビジュアルワークフローエディター。</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>プラグイン</h2>
+        <p>ModelFlowは、検証済みプラグインとコミュニティプラグインをサポートしています。プラグインマネージャーからインストールするか、独自のプラグインを作成できます。</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="プラグインマネージャー" />
+          <figcaption>プラグインの閲覧と管理。</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>ローカルCLIとツール</h2>
+        <p>モデルはローカルコマンドの実行、ファイルの読み取り、ディレクトリの一覧表示ができます。チャットで<code>/tool</code>と入力するか、ワークフローにコマンドノードを追加します。</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="メモリとツール" />
+          <figcaption>セキュリティポリシーに基づくツールの実行。</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>コールログとコスト</h2>
+        <p>コールログは、すべてのAIコール、ツール実行、トークン使用量、推定コストを追跡します。ログをエクスポートして分析できます。</p>
+        <figure>
+          <img src="../assets/screenshots/ja/04-calllog.png" alt="コールログ" />
+          <figcaption>すべてのコールとコストを追跡します。</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>設定とプライバシー</h2>
+        <p>ModelFlowはローカルファーストです。セッション、モデル設定、プラグインはすべてお使いのマシンに保存されます。設定で言語、ワークスペース、データのエクスポートを変更できます。</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="ワークスペース設定" />
+          <figcaption>ワークスペースと設定パネル。</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← ModelFlow ホームへ戻る</a></p>
+      <p>© 2026 ModelFlow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

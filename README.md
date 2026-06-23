@@ -20,5 +20,9 @@ Open http://localhost:8000.
 
 - `index.html` — Landing page
 - `css/styles.css` — Theme and layout
-- `js/main.js` — Navigation and scroll interactions
+- `js/main.js` — Navigation, scroll interactions, language selector, pricing toggle
+- `js/i18n.js` — Homepage internationalization (8 languages)
 - `assets/` — Logo and product screenshots
+- `docs/` — Multilingual user guide (8 languages)
+  - `docs/{lang}/index.html` — Language-specific guide
+  - `docs/assets/screenshots/` — Product screenshots

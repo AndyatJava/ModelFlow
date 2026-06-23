@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModelFlow — One Workspace. Every Model.</title>
-  <meta name="description" content="Bring all your AI models together. Chat, orchestrate, and automate with a single desktop app — private, local-first, and cost-transparent." />
+  <meta name="description" content="Chat with text, image, video, and audio models. Run local CLI commands, build visual workflows, and extend via plugins — all in one local-first AI workspace." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,13 +18,29 @@
         <span>ModelFlow</span>
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#plugins">Plugins</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/wiki" target="_blank" rel="noopener">Docs</a></li>
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#plugins" data-i18n="nav.plugins">Plugins</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="./docs/index.html" data-i18n="nav.docs" data-docs-link>Docs</a></li>
       </ul>
       <div class="nav-cta">
-        <a class="btn btn-cta" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener">Download</a>
+        <div class="lang-select" id="lang-select">
+          <button type="button" class="lang-select-trigger" id="lang-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <span id="lang-select-current">English</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <ul class="lang-select-dropdown" id="lang-select-dropdown" role="listbox" aria-label="Select language">
+            <li role="option" data-lang="en" tabindex="0">English</li>
+            <li role="option" data-lang="zh-CN" tabindex="0">简体中文</li>
+            <li role="option" data-lang="zh-TW" tabindex="0">繁體中文</li>
+            <li role="option" data-lang="ja" tabindex="0">日本語</li>
+            <li role="option" data-lang="ko" tabindex="0">한국어</li>
+            <li role="option" data-lang="de" tabindex="0">Deutsch</li>
+            <li role="option" data-lang="fr" tabindex="0">Français</li>
+            <li role="option" data-lang="es" tabindex="0">Español</li>
+          </ul>
+        </div>
+        <a class="btn btn-cta" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="nav.download">Download</a>
         <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu">
           <span></span>
           <span></span>
@@ -37,18 +53,18 @@
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="tagline"><span class="tagline-dot"></span> Now in Microsoft Store</div>
-          <h1 class="hero-title">One Workspace.<br />Every Model.</h1>
-          <p class="hero-subtitle">
-            Bring all your AI models together. Chat, orchestrate, and automate with a single desktop app — private, local-first, and cost-transparent.
+          <div class="tagline"><span class="tagline-dot"></span> <span data-i18n="hero.tagline">Now in Microsoft Store</span></div>
+          <h1 class="hero-title" data-i18n="hero.title" data-i18n-html>One Workspace.<br />Every Model.</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Bring all your AI models together. Chat with text, image, video, and audio models; run local CLI commands; build automations; and extend everything via plugins — all from one local-first desktop app.
           </p>
           <div class="hero-ctas">
-            <a class="btn btn-cta" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener">
+            <a class="btn btn-cta" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="hero.ctaPrimary">
               Get ModelFlow Free
             </a>
-            <a class="btn btn-secondary" href="#features">See Features</a>
+            <a class="btn btn-secondary" href="#features" data-i18n="hero.ctaSecondary">See Features</a>
           </div>
-          <p class="hero-trust">Free download · 14-day Pro trial · Local-first</p>
+          <p class="hero-trust" data-i18n="hero.trust">Free download · 14-day Pro trial · Local-first</p>
         </div>
         <div class="hero-visual">
           <img src="assets/screenshot-chat.png" alt="ModelFlow chat interface with @model mentions" />
@@ -59,8 +75,8 @@
     <section class="section features" id="features">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Built for model orchestration</h2>
-          <p class="section-subtitle">Everything you need to manage, switch, and chain AI models in one desktop workspace.</p>
+          <h2 class="section-title" data-i18n="features.title">Built for model orchestration</h2>
+          <p class="section-subtitle" data-i18n="features.subtitle">Everything you need to manage, switch, and chain AI models in one desktop workspace.</p>
         </div>
         <div class="features-grid">
           <article class="feature-card feature-card-wide">
@@ -68,8 +84,8 @@
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
               </div>
-              <h3 class="feature-title">All Your Models, One Config</h3>
-              <p class="feature-desc">Connect OpenAI, DeepSeek, Kimi, Qwen, Anthropic, Ollama and more. Set roles, context windows, and cost limits per model.</p>
+              <h3 class="feature-title" data-i18n="features.modelsTitle">All Your Models, One Config</h3>
+              <p class="feature-desc" data-i18n="features.modelsDesc">Connect text, image, video, and audio models — OpenAI, DeepSeek, Kimi, Qwen, Anthropic, Ollama, Wanx, Vidu, Kling, and more. Set roles, context windows, and cost limits per model.</p>
             </div>
             <div class="feature-media">
               <img src="assets/screenshot-models.png" alt="Model manager showing multiple configured LLM providers" />
@@ -80,8 +96,8 @@
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
               </div>
-              <h3 class="feature-title">Mention to Switch</h3>
-              <p class="feature-desc">Type <code>@</code> in any conversation to route the next reply to the right model. No tab switching, no copy-paste — just ask the best model for the job.</p>
+              <h3 class="feature-title" data-i18n="features.mentionTitle">Mention to Switch</h3>
+              <p class="feature-desc" data-i18n="features.mentionDesc">Type <code>@</code> in any conversation to route the next reply to the right model. No tab switching, no copy-paste — just ask the best model for the job.</p>
             </div>
             <div class="feature-media">
               <img src="assets/screenshot-chat.png" alt="Chat interface demonstrating @model mention" />
@@ -92,8 +108,8 @@
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
               </div>
-              <h3 class="feature-title">Build Workflows That Ship</h3>
-              <p class="feature-desc">Drag, connect, and run multi-model pipelines in a visual node editor. Chain reasoning, writing, and review steps into reusable automations.</p>
+              <h3 class="feature-title" data-i18n="features.workflowTitle">Build Workflows That Ship</h3>
+              <p class="feature-desc" data-i18n="features.workflowDesc">Drag, connect, and run multi-model pipelines in a visual node editor. Add command nodes to execute local CLI tools, branch on conditions, and chain reasoning into reusable automations.</p>
             </div>
             <div class="feature-media">
               <img src="assets/screenshot-workflow.png" alt="Visual workflow editor with connected model nodes" />
@@ -102,28 +118,66 @@
         </div>
       </div>
     </section>
+    <section class="section capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="capabilities.title">More capabilities</h2>
+          <p class="section-subtitle" data-i18n="capabilities.subtitle">ModelFlow is built to handle the full spectrum of AI work — not just text chat.</p>
+        </div>
+        <div class="capabilities-grid">
+          <article class="capability-card">
+            <div class="capability-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <h3 class="capability-title" data-i18n="capabilities.cliTitle">Local CLI Execution</h3>
+            <p class="capability-desc" data-i18n="capabilities.cliDesc">Models can invoke local commands, read files, and list directories. Run <code>/tool</code> in chat or wire command nodes into workflows.</p>
+          </article>
+          <article class="capability-card">
+            <div class="capability-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            </div>
+            <h3 class="capability-title" data-i18n="capabilities.mediaTitle">Image, Video &amp; Audio</h3>
+            <p class="capability-desc" data-i18n="capabilities.mediaDesc">Generate images, videos, and audio with providers like DALL·E, Stable Diffusion, Wanx, Vidu, Kling, Pika, Runway, and TTS models.</p>
+          </article>
+          <article class="capability-card">
+            <div class="capability-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="capability-title" data-i18n="capabilities.browserTitle">Browser Companion</h3>
+            <p class="capability-desc" data-i18n="capabilities.browserDesc">Capture web pages and send them into ModelFlow with one click. Bring live context from your browser straight into chat and workflows.</p>
+          </article>
+          <article class="capability-card">
+            <div class="capability-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            </div>
+            <h3 class="capability-title" data-i18n="capabilities.pluginTitle">Open Plugin System</h3>
+            <p class="capability-desc" data-i18n="capabilities.pluginDesc">Extend ModelFlow with verified plugins or build your own. Package tools, commands, and integrations that every model can call.</p>
+          </article>
+        </div>
+      </div>
+    </section>
     <section class="section plugins" id="plugins">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Extend ModelFlow Your Way</h2>
-          <p class="section-subtitle">Official plugins for common tasks, plus an open community for developers who want to build their own.</p>
+          <h2 class="section-title" data-i18n="plugins.title">Extend ModelFlow Your Way</h2>
+          <p class="section-subtitle" data-i18n="plugins.subtitle">Verified plugins and an open community for developers who want to add tools, commands, and integrations that every model can call.</p>
         </div>
         <div class="plugins-grid">
           <article class="plugin-card">
             <div class="plugin-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <h3 class="plugin-title">Verified Plugins</h3>
-            <p class="plugin-desc">Curated and security-reviewed plugins that just work out of the box. Search, code execution, file handling, and more.</p>
-            <a class="plugin-link" href="https://github.com/ModelFlow-App/multi-agent-platform/wiki/Verified-Plugins" target="_blank" rel="noopener">Browse verified plugins →</a>
+            <h3 class="plugin-title" data-i18n="plugins.verifiedTitle">Verified Plugins</h3>
+            <p class="plugin-desc" data-i18n="plugins.verifiedDesc">Curated and security-reviewed plugins that just work out of the box. Search, code execution, file handling, and more.</p>
+            <a class="plugin-link" href="https://github.com/ModelFlow-App/multi-agent-platform/wiki/Verified-Plugins" target="_blank" rel="noopener" data-i18n="plugins.verifiedLink">Browse verified plugins →</a>
           </article>
           <article class="plugin-card plugin-card-community">
             <div class="plugin-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
-            <h3 class="plugin-title">Plugin Community</h3>
-            <p class="plugin-desc">Browse, share, and build plugins with other developers. Docs and discussions live on GitHub Wiki.</p>
-            <a class="plugin-link" href="https://github.com/ModelFlow-App/multi-agent-platform/discussions" target="_blank" rel="noopener">Join the community →</a>
+            <h3 class="plugin-title" data-i18n="plugins.communityTitle">Plugin Community</h3>
+            <p class="plugin-desc" data-i18n="plugins.communityDesc">Browse, share, and build plugins with other developers. Docs and discussions live on GitHub Wiki.</p>
+            <a class="plugin-link" href="https://github.com/ModelFlow-App/multi-agent-platform/discussions" target="_blank" rel="noopener" data-i18n="plugins.communityLink">Join the community →</a>
           </article>
         </div>
       </div>
@@ -131,47 +185,53 @@
     <section class="section pricing" id="pricing">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Simple Pricing</h2>
-          <p class="section-subtitle">Start free. Upgrade when you need more models, advanced workflows, and official plugins.</p>
+          <h2 class="section-title" data-i18n="pricing.title">Simple Pricing</h2>
+          <p class="section-subtitle" data-i18n="pricing.subtitle">Start free. Upgrade when you need more models, advanced workflows, and official plugins.</p>
         </div>
         <div class="pricing-grid">
           <article class="pricing-card">
-            <h3 class="pricing-name">Free</h3>
-            <p class="pricing-desc">For individuals getting started.</p>
-            <div class="pricing-price">$0</div>
+            <h3 class="pricing-name" data-i18n="pricing.freeName">Free</h3>
+            <p class="pricing-desc" data-i18n="pricing.freeDesc">For individuals getting started.</p>
+            <div class="pricing-price" data-i18n="pricing.freePrice">$0</div>
             <ul class="pricing-features">
-              <li>Unlimited local conversations</li>
-              <li>Up to 3 model configurations</li>
-              <li>Basic workflows</li>
-              <li>Community plugins</li>
+              <li data-i18n="pricing.freeFeature1">Unlimited local conversations</li>
+              <li data-i18n="pricing.freeFeature2">Up to 3 model configurations</li>
+              <li data-i18n="pricing.freeFeature3">Text, image, video &amp; audio models</li>
+              <li data-i18n="pricing.freeFeature4">Basic workflows &amp; CLI commands</li>
+              <li data-i18n="pricing.freeFeature5">Community plugins</li>
             </ul>
-            <a class="btn btn-secondary pricing-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener">Download Free</a>
+            <a class="btn btn-secondary pricing-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="pricing.freeBtn">Download Free</a>
           </article>
-          <article class="pricing-card pricing-card-popular">
-            <span class="pricing-badge">Most Popular</span>
-            <h3 class="pricing-name">Pro</h3>
-            <p class="pricing-desc">For power users and teams.</p>
-            <div class="pricing-price">$9.9<span>/month</span></div>
-            <p class="pricing-billing">or $99/year · 14-day free trial</p>
+          <article class="pricing-card pricing-card-popular" data-pricing-card="pro">
+            <span class="pricing-badge" data-i18n="pricing.popularBadge">Most Popular</span>
+            <span class="pricing-save" id="pricing-save" data-i18n="pricing.saveBadge" style="display: none;">Save 17%</span>
+            <h3 class="pricing-name" data-i18n="pricing.proName">Pro</h3>
+            <p class="pricing-desc" data-i18n="pricing.proDesc">For power users and teams.</p>
+            <div class="pricing-toggle">
+              <button type="button" class="pricing-toggle-btn active" data-billing="monthly" data-i18n="pricing.monthly">Monthly</button>
+              <button type="button" class="pricing-toggle-btn" data-billing="yearly" data-i18n="pricing.yearly">Yearly</button>
+            </div>
+            <div class="pricing-price" id="pro-price" data-i18n="pricing.proMonthlyPrice" data-i18n-html>$9.9<span>/month</span></div>
+            <p class="pricing-billing" id="pro-billing" data-i18n="pricing.proMonthlyBilling">billed monthly</p>
             <ul class="pricing-features">
-              <li>Unlimited model configurations</li>
-              <li>Advanced workflows with variables</li>
-              <li>Verified plugins</li>
-              <li>Call log export & advanced analytics</li>
-              <li>Priority support</li>
+              <li data-i18n="pricing.proFeature1">Unlimited model configurations</li>
+              <li data-i18n="pricing.proFeature2">Advanced workflows with variables &amp; conditions</li>
+              <li data-i18n="pricing.proFeature3">Verified plugins &amp; tool calling</li>
+              <li data-i18n="pricing.proFeature4">Call log export &amp; advanced analytics</li>
+              <li data-i18n="pricing.proFeature5">Priority support</li>
             </ul>
-            <a class="btn btn-cta pricing-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener">Start 14-Day Free Trial</a>
+            <a class="btn btn-cta pricing-btn" id="pro-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="pricing.proMonthlyBtn">Start 14-Day Free Trial</a>
           </article>
         </div>
       </div>
     </section>
     <section class="section cta" id="download">
       <div class="container cta-inner">
-        <h2 class="cta-title">Ready to orchestrate your AI team?</h2>
-        <p class="cta-subtitle">Download ModelFlow from the Microsoft Store and start your 14-day Pro trial today.</p>
+        <h2 class="cta-title" data-i18n="cta.title">Ready to orchestrate your AI team?</h2>
+        <p class="cta-subtitle" data-i18n="cta.subtitle">Download ModelFlow from the Microsoft Store and start your 14-day Pro trial today.</p>
         <a class="btn btn-cta cta-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
-          Get it on Microsoft Store
+          <span data-i18n="cta.btn">Get it on Microsoft Store</span>
         </a>
       </div>
     </section>
@@ -183,35 +243,36 @@
           <img src="assets/logo.png" alt="ModelFlow logo" />
           <span>ModelFlow</span>
         </a>
-        <p class="footer-tagline">One workspace for every AI model.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">One workspace for every AI model.</p>
       </div>
       <div class="footer-links">
-        <h4>Product</h4>
+        <h4 data-i18n="footer.product">Product</h4>
         <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#plugins">Plugins</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="#plugins" data-i18n="nav.plugins">Plugins</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Resources</h4>
+        <h4 data-i18n="footer.resources">Resources</h4>
         <ul>
-          <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/wiki" target="_blank" rel="noopener">Docs</a></li>
-          <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/discussions" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="./docs/index.html" data-i18n="nav.docs" data-docs-link>Docs</a></li>
+          <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/discussions" target="_blank" rel="noopener" data-i18n="plugins.communityTitle">Community</a></li>
           <li><a href="https://github.com/ModelFlow-App/multi-agent-platform" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Legal</h4>
+        <h4 data-i18n="footer.legal">Legal</h4>
         <ul>
-          <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/blob/main/PRIVACY.md" target="_blank" rel="noopener">Privacy</a></li>
+          <li><a href="https://github.com/ModelFlow-App/multi-agent-platform/blob/main/PRIVACY.md" target="_blank" rel="noopener" data-i18n="footer.privacy">Privacy</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 ModelFlow. All rights reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 ModelFlow. All rights reserved.</p>
     </div>
   </footer>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

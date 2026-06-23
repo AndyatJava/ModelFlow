@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModelFlow 사용자 가이드 — 한국어</title>
+  <meta name="description" content="ModelFlow 사용법을 알아보세요: 모델, 채팅, 워크플로, 플러그인, CLI 도구, 호출 기록, 설정." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="ModelFlow 로고" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">빠른 시작</a></li>
+        <li><a href="#models">모델 관리</a></li>
+        <li><a href="#chat">채팅 및 @ 멘션</a></li>
+        <li><a href="#workflows">워크플로</a></li>
+        <li><a href="#plugins">플러그인</a></li>
+        <li><a href="#cli-tools">로컬 CLI 및 도구</a></li>
+        <li><a href="#call-log">호출 기록 및 비용</a></li>
+        <li><a href="#settings">설정 및 개인정보</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>ModelFlow 사용자 가이드</h1>
+        <p>ModelFlow에 오신 것을 환영합니다. 이 가이드는 첫 실행부터 고급 다중 모델 워크플로까지 모든 것을 다룹니다.</p>
+        <h2>빠른 시작</h2>
+        <ol>
+          <li>Microsoft Store에서 ModelFlow를 다운로드하세요.</li>
+          <li>앱을 열고 온보딩을 완료하세요.</li>
+          <li>모델 관리자에서 첫 번째 모델을 추가하세요.</li>
+          <li>채팅을 시작하고 <code>@모델-이름</code>을 입력하여 모델을 전환하세요.</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>모델 관리</h2>
+        <p>모델 관리자를 사용하여 텍스트, 이미지, 비디오, 오디오 모델을 추가하세요. 각 모델에 대해 제공자, API 키, 역할, 컨텍스트 창, 비용 한도를 설정할 수 있습니다.</p>
+        <figure>
+          <img src="../assets/screenshots/ko/02-models.png" alt="모델 관리자" />
+          <figcaption>여러 제공자가 구성된 모델 관리자.</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>채팅 및 @ 멘션</h2>
+        <p><code>@</code>를 입력한 뒤 모델 이름을 입력하면 다음 답변을 해당 모델로 라우팅합니다. 동일한 대화에서 여러 모델을 연결할 수 있습니다.</p>
+        <figure>
+          <img src="../assets/screenshots/ko/01-chat.png" alt="@ 멘션이 있는 채팅" />
+          <figcaption>대화 중간에 @멘션을 사용하여 모델을 전환하세요.</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>워크플로</h2>
+        <p>워크플로 편집기를 열어 시각적 파이프라인을 구축하세요. 모델 노드, 조건 노드, 명령 노드를 캔버스로 끌어다 놓고 연결하세요.</p>
+        <figure>
+          <img src="../assets/screenshots/ko/03-workflow.png" alt="워크플로 편집기" />
+          <figcaption>연결된 노드가 있는 시각적 워크플로 편집기.</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>플러그인</h2>
+        <p>ModelFlow는 인증된 플러그인과 커뮤니티 플러그인을 지원합니다. 플러그인 관리자에서 플러그인을 설치하거나 직접 만들 수 있습니다.</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="플러그인 관리자" />
+          <figcaption>플러그인을 탐색하고 관리하세요.</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>로컬 CLI 및 도구</h2>
+        <p>모델은 로컬 명령을 실행하고, 파일을 읽고, 디렉토리를 나열할 수 있습니다. 채팅에서 <code>/tool</code>을 입력하거나 워크플로에 명령 노드를 추가하세요.</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="메모리 및 도구" />
+          <figcaption>보안 정책이 적용된 도구 실행.</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>호출 기록 및 비용</h2>
+        <p>호출 기록은 모든 AI 호출, 도구 실행, 토큰 사용량, 예상 비용을 추적합니다. 분석을 위해 로그를 보내세요.</p>
+        <figure>
+          <img src="../assets/screenshots/ko/04-calllog.png" alt="호출 기록" />
+          <figcaption>모든 호출과 비용을 추적하세요.</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>설정 및 개인정보</h2>
+        <p>ModelFlow는 로컬 우선입니다. 세션, 모델 구성, 플러그인은 사용자의 기기에 저장됩니다. 설정에서 언어, 작업 공간을 변경하고 데이터를 보내세요.</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="작업 공간 설정" />
+          <figcaption>작업 공간 및 설정 패널.</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← ModelFlow 홈으로 돌아가기</a></p>
+      <p>© 2026 ModelFlow. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

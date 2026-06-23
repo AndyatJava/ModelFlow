@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guía de usuario de ModelFlow — Español</title>
+  <meta name="description" content="Aprende a usar ModelFlow: modelos, chat, flujos de trabajo, plugins, herramientas de CLI, registro de llamadas y configuración." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+</head>
+<body class="docs-body">
+  <nav class="navbar docs-navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-brand">
+        <img src="../../assets/logo.png" alt="Logo de ModelFlow" />
+        <span>ModelFlow</span>
+      </a>
+      <div class="docs-lang-nav">
+        <a href="../zh-CN/index.html">简体中文</a>
+        <a href="../zh-TW/index.html">繁體中文</a>
+        <a href="../ja/index.html">日本語</a>
+        <a href="../ko/index.html">한국어</a>
+        <a href="../de/index.html">Deutsch</a>
+        <a href="../fr/index.html">Français</a>
+        <a href="../es/index.html">Español</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="docs-layout container">
+    <aside class="docs-sidebar">
+      <ul>
+        <li><a href="#quick-start">Inicio rápido</a></li>
+        <li><a href="#models">Gestión de modelos</a></li>
+        <li><a href="#chat">Chat y menciones @</a></li>
+        <li><a href="#workflows">Flujos de trabajo</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#cli-tools">CLI y herramientas locales</a></li>
+        <li><a href="#call-log">Registro de llamadas y costos</a></li>
+        <li><a href="#settings">Configuración y privacidad</a></li>
+      </ul>
+    </aside>
+
+    <main class="docs-main">
+      <section id="quick-start">
+        <h1>Guía de usuario de ModelFlow</h1>
+        <p>Bienvenido a ModelFlow. Esta guía abarca todo, desde tu primera ejecución hasta flujos de trabajo avanzados con múltiples modelos.</p>
+        <h2>Inicio rápido</h2>
+        <ol>
+          <li>Descarga ModelFlow desde Microsoft Store.</li>
+          <li>Abre la aplicación y completa la introducción.</li>
+          <li>Añade tu primer modelo en el Administrador de modelos.</li>
+          <li>Inicia un chat y escribe <code>@nombre-del-modelo</code> para cambiar de modelo.</li>
+        </ol>
+      </section>
+
+      <section id="models">
+        <h2>Gestión de modelos</h2>
+        <p>Usa el Administrador de modelos para añadir modelos de texto, imagen, video y audio. Para cada modelo puedes configurar el proveedor, la clave de API, el rol, la ventana de contexto y los límites de costo.</p>
+        <figure>
+          <img src="../assets/screenshots/es/02-models.png" alt="Administrador de modelos" />
+          <figcaption>Administrador de modelos con varios proveedores configurados.</figcaption>
+        </figure>
+      </section>
+
+      <section id="chat">
+        <h2>Chat y menciones @</h2>
+        <p>Escribe <code>@</code> seguido del nombre de un modelo para dirigir la siguiente respuesta a ese modelo. Puedes encadenar varios modelos en la misma conversación.</p>
+        <figure>
+          <img src="../assets/screenshots/es/01-chat.png" alt="Chat con mención @" />
+          <figcaption>Usa las menciones @ para cambiar de modelo durante una conversación.</figcaption>
+        </figure>
+      </section>
+
+      <section id="workflows">
+        <h2>Flujos de trabajo</h2>
+        <p>Abre el Editor de flujos de trabajo para construir pipelines visuales. Arrastra nodos de modelo, nodos de condición y nodos de comando al lienzo, y luego conéctalos.</p>
+        <figure>
+          <img src="../assets/screenshots/es/03-workflow.png" alt="Editor de flujos de trabajo" />
+          <figcaption>Editor de flujos de trabajo visual con nodos conectados.</figcaption>
+        </figure>
+      </section>
+
+      <section id="plugins">
+        <h2>Plugins</h2>
+        <p>ModelFlow admite plugins verificados y plugins de la comunidad. Instala plugins desde el Administrador de plugins o crea los tuyos propios.</p>
+        <figure>
+          <img src="../assets/screenshots/common/06-skills.png" alt="Administrador de plugins" />
+          <figcaption>Explora y gestiona plugins.</figcaption>
+        </figure>
+      </section>
+
+      <section id="cli-tools">
+        <h2>CLI y herramientas locales</h2>
+        <p>Los modelos pueden ejecutar comandos locales, leer archivos y listar directorios. Escribe <code>/tool</code> en el chat o añade un nodo de comando a un flujo de trabajo.</p>
+        <figure>
+          <img src="../assets/screenshots/common/05-memory.png" alt="Memoria y herramientas" />
+          <figcaption>Ejecución de herramientas con políticas de seguridad.</figcaption>
+        </figure>
+      </section>
+
+      <section id="call-log">
+        <h2>Registro de llamadas y costos</h2>
+        <p>El Registro de llamadas rastrea cada llamada a IA, ejecución de herramientas, uso de tokens y costo estimado. Exporta los registros para su análisis.</p>
+        <figure>
+          <img src="../assets/screenshots/es/04-calllog.png" alt="Registro de llamadas" />
+          <figcaption>Rastrea cada llamada y su costo.</figcaption>
+        </figure>
+      </section>
+
+      <section id="settings">
+        <h2>Configuración y privacidad</h2>
+        <p>ModelFlow es local-first. Tus sesiones, configuraciones de modelos y plugins se almacenan en tu máquina. Cambia el idioma, el espacio de trabajo y exporta datos en Configuración.</p>
+        <figure>
+          <img src="../assets/screenshots/common/07-workspace.png" alt="Configuración del espacio de trabajo" />
+          <figcaption>Panel de espacio de trabajo y configuración.</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p><a href="../../index.html" style="color:var(--text-secondary);">← Volver al inicio de ModelFlow</a></p>
+      <p>© 2026 ModelFlow. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
