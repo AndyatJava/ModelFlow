@@ -661,7 +661,7 @@ git commit -m "feat(styles): add language selector and pricing toggle styles"
     <li data-i18n="pricing.proFeature5">Priority support</li>
   </ul>
 
-  <a class="btn btn-cta pricing-btn" id="pro-btn" href="https://apps.microsoft.com/detail/placeholder" target="_blank" rel="noopener" data-i18n="pricing.proMonthlyBtn">Start 7-Day Free Trial</a>
+  <a class="btn btn-cta pricing-btn" id="pro-btn" href="https://apps.microsoft.com/detail/9PKVZ235H6TD?hl=en-us&gl=CN&ocid=pdpshare" target="_blank" rel="noopener" data-i18n="pricing.proMonthlyBtn">Start 7-Day Free Trial</a>
 </article>
 ```
 
